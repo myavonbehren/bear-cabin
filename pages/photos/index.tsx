@@ -27,7 +27,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
 
   return (
     <>
-      <main className="mx-auto max-w-[1960px] p-4">
+      <main className="mx-auto max-w-[1960px] p-4 md:p-10">
         {photoId && (
           <Modal
             images={images}
@@ -42,7 +42,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           <h1 className="text-4xl font-thin text-gray-900 mb-4">Photos</h1>
         </div>
         
-        <div className="columns-1 gap-4 sm:columns-2 xl:columns-3 2xl:columns-4">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-2 pb-5">
           {images.map(({ id, public_id, format, blurDataUrl }) => (
             <Link
               key={id}
@@ -54,7 +54,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
             >
               <Image
                 alt="Bear Cabin photo"
-                className="transform brightness-90 transition will-change-auto group-hover:brightness-110"
+                className="transform transition will-change-auto group-hover:brightness-90"
                 style={{ transform: "translate3d(0, 0, 0)" }}
                 placeholder="blur"
                 blurDataURL={blurDataUrl}
