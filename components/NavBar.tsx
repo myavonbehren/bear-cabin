@@ -20,7 +20,7 @@ const NAVIGATION_ITEMS: NavigationItem[] = [
   { href: '/photos', label: 'Photos' },
   { href: '/videos', label: 'Videos' },
   { href: '/things-to-do', label: 'Things to Do' },
-] as const;
+] ;
 // Main Component
 const NavBar = ({ className = '' }: HeaderProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
