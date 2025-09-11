@@ -15,7 +15,7 @@ interface HeaderProps {
 }
 
 // Constants
-const NAVIGATION_ITEMS: NavigationItem[] = [
+const navigationItems: NavigationItem[] = [
   { href: '/about', label: 'About' },
   { href: '/photos', label: 'Photos' },
   { href: '/videos', label: 'Videos' },
@@ -57,7 +57,7 @@ const NavBar = ({ className = '' }: HeaderProps) => {
           </Link>
 
           <div className="flex items-center gap-6 lg:gap-8">
-            {NAVIGATION_ITEMS.map((item) => (
+            {navigationItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -109,7 +109,7 @@ const NavBar = ({ className = '' }: HeaderProps) => {
             aria-hidden={false}
           >
             <div>
-              {NAVIGATION_ITEMS.map((item) => (
+                {navigationItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
