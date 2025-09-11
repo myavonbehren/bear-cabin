@@ -2,8 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'ivypresto-display', serif;
+  font-weight: 100;
+}
+
+p {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 200;
+}
+
+.nav-link {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 300;
+}
+
+/* Performance optimizations */
 @supports (font: -apple-system-body) and (-webkit-appearance: none) {
   img[loading="lazy"] {
     clip-path: inset(0.6px);
   }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
 }
