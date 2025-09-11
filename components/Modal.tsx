@@ -23,8 +23,8 @@ export default function Modal({
   const [curIndex, setCurIndex] = useState(index);
 
   function handleClose() {
-    router.push("/", undefined, { shallow: true });
-    onClose();
+    router.push("/photos", undefined, { shallow: true });
+    onClose && onClose();
   }
 
   function changePhotoId(newVal: number) {
@@ -36,6 +36,7 @@ export default function Modal({
     setCurIndex(newVal);
     router.push(
       {
+        pathname: "/photos",
         query: { photoId: newVal },
       },
       `/p/${newVal}`,

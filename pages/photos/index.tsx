@@ -27,6 +27,10 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
 
   return (
     <>
+    <Head>
+        <title>Photos - Bear Cabin</title>
+        <meta name="description" content="View photos of Bear Cabin" />
+      </Head>
       <main className="mx-auto max-w-[1960px] p-4 md:p-10">
         {photoId && (
           <Modal
@@ -46,7 +50,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           {images.map(({ id, public_id, format, blurDataUrl }) => (
             <Link
               key={id}
-              href={`/?photoId=${id}`}
+              href={{ pathname: "/photos", query: { photoId: id } }}
               as={`/p/${id}`}
               ref={id === Number(lastViewedPhoto) ? lastViewedPhotoRef : null}
               shallow
