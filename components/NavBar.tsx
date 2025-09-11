@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { IoClose, IoMenu } from "react-icons/io5";
+import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
 
 // Types
 interface NavigationItem {
@@ -95,7 +95,7 @@ const NavBar = ({ className = '' }: HeaderProps) => {
             aria-controls="mobile-menu"
             type="button"
           >
-            {isMobileMenuOpen ? <IoClose className="h-6 w-6" /> : <IoMenu className="h-6 w-6" />}
+            {isMobileMenuOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
           </button>
         </nav>
 
