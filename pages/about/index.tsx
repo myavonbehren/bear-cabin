@@ -8,20 +8,12 @@ const About: NextPage = () => {
         <title>About - Bear Cabin</title>
         <meta name="description" content="Learn about Bear Cabin and our story" />
       </Head>
-      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
-        <div className="text-center">
-          <h1 className="text-4xl font-thin text-gray-900 mb-8">About Bear Cabin</h1>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-gray-600 mb-6">
-              Bear Cabin is a beautiful retreat nestled in nature, offering a perfect escape from the hustle and bustle of everyday life.
-            </p>
-            <p className="text-lg text-gray-600 mb-6">
-              Our cabin provides a unique opportunity to experience the great outdoors while enjoying modern comforts and amenities.
-            </p>
-            <p className="text-lg text-gray-600">
-              Whether you're looking for adventure, relaxation, or simply a change of scenery, Bear Cabin has something special to offer every visitor.
-            </p>
-          </div>
+      <main className="mx-auto max-w-[1960px] p-4 md:p-10">
+        <div className="text-left">
+          <h1 className="text-4xl font-thin text-gray-900 mb-8">About</h1>
+          <p className="text-gray-600">
+            About content coming soon...
+          </p>
         </div>
       </main>
     </>
