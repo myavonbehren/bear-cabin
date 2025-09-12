@@ -62,7 +62,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
                 style={{ transform: "translate3d(0, 0, 0)" }}
                 placeholder="blur"
                 blurDataURL={blurDataUrl}
-                src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/c_scale,w_720/${public_id}.${format}`}
+                src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/c_scale,w_1080/${public_id}.${format}`}
                 width={720}
                 height={480}
                 sizes="(max-width: 640px) 100vw,
@@ -83,7 +83,7 @@ export default Home;
 export async function getStaticProps() {
   const results = await cloudinary.v2.search
     .expression(`folder:${process.env.CLOUDINARY_FOLDER}/*`)
-    .sort_by("public_id", "desc")
+    .sort_by("public_id", "asc")
     .max_results(400)
     .execute();
   let reducedResults: ImageProps[] = [];
@@ -112,6 +112,7 @@ export async function getStaticProps() {
   return {
     props: {
       images: reducedResults,
+      revalidate: 60 * 5, // 5 minutes
     },
   };
 }

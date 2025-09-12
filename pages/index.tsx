@@ -47,7 +47,7 @@ const Home: NextPage = () => {
           {/* Top Left Quadrant - Rafting */}
           <div className="col-span-2 row-span-1 col-start-1 row-start-2 relative">
             <Image 
-              src="/rafting.jpg" 
+              src="/rafting.jpeg" 
               alt="Rafting" 
               fill
               className="object-cover"
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
           {/* Bottom Right - Fishing */}
           <div className="col-span-1 row-span-1 relative">
             <Image 
-              src="/fishing.webp" 
+              src="/fishing.jpg" 
               alt="Fishing" 
               fill
               className="object-cover"
@@ -141,7 +141,7 @@ const Home: NextPage = () => {
           {/* Top Left Quadrant - Rafting */}
           <div className="col-span-2 row-span-2 col-start-1 row-start-7 relative">
             <Image 
-              src="/rafting.jpg" 
+              src="/rafting.jpeg" 
               alt="Rafting" 
               fill
               className="object-cover"
@@ -171,7 +171,7 @@ const Home: NextPage = () => {
           {/* Bottom Right - Fishing */}
           <div className="col-span-1 row-span-2 col-start-3 row-start-7 relative">
             <Image 
-              src="/fishing.webp" 
+              src="/fishing.jpg" 
               alt="Fishing" 
               fill
               className="object-cover"
