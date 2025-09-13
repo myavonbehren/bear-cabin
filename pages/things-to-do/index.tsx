@@ -31,7 +31,7 @@ const ThingsToDo: NextPage = () => {
                 };
 
                 return (
-                  <div key={activity} className="bg-white shadow-md p-6 rounded-lg">
+                  <div key={activity} className="bg-white shadow-md p-6">
                     <h3 className="text-xl font-thin text-gray-900 mb-4">{activity}</h3>
                     <p 
                       className="text-gray-600 mb-4 leading-relaxed"
@@ -48,7 +48,7 @@ const ThingsToDo: NextPage = () => {
           {/* Restaurants/Groceries Section */}
           <div>
             <h2 className="text-2xl font-thin text-gray-800 mb-6">Restaurants & Groceries</h2>
-            <div className="bg-white shadow-md p-6 rounded-lg">
+            <div className="bg-white shadow-md p-6">
               {(() => {
                 // Function to embed links within text
                 const embedLinksInText = (text: string, links?: Record<string, string>) => {
