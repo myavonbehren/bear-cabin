@@ -50,7 +50,7 @@ const NavBar = ({ className = '' }: HeaderProps) => {
           aria-label="Main navigation">
           <Link 
             href="/" 
-            className="font-['ivypresto-display',_serif] font-thin text-2xl text-white ml-5 hover:opacity-80 transition-opacity duration-200"
+            className="font-['ivypresto-display',_serif] font-thin text-2xl text-white hover:opacity-80 transition-opacity duration-200"
             aria-label="Bear Cabin - Go to homepage">
             BEAR CABIN
           </Link>
@@ -81,7 +81,7 @@ const NavBar = ({ className = '' }: HeaderProps) => {
         >
           <Link 
             href="/" 
-            className="font-['ivypresto-display',_serif] ml-1 font-thin text-2xl text-white hover:opacity-80 transition-opacity duration-200"
+            className="font-['ivypresto-display',_serif] font-thin text-2xl text-white hover:opacity-80 transition-opacity duration-200"
             aria-label="Bear Cabin - Go to homepage"
           >
             BEAR CABIN
