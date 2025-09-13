@@ -30,12 +30,18 @@ export const thingsToDo = {
         "links": {
           "Great Smoky Mountain Railway": "https://gsmr.com/tickets/"
         }
+      },
+      "Shopping": {
+        "text": "Be sure to visit downtown Bryson City for your shopping pleasure with quaint shops and a friendly St. Joseph Thrift Store…(Deb volunteers there 😉)"
       }
     },
     "Restaurants/Groceries": {
-      "text": "Quick items can be found at the nearby Dollar General. Ingles in Bryson City is a full-service grocery store that includes a deli. Swain is a dry county, so liquor can only be purchased at the ABC store in Bryson City. Beer and wine are sold at Ingles. Gas stations also sell beer. Breakfast at the Everett Diner in Bryson City serves a traditional diner breakfast (make sure to check days of operation). The Bryson City Bakery & Coffee Shop serves excellent pastries and coffee. The River’s End at the NOC also serves breakfast, lunch, and dinner, and offers a nice view over the river (make sure to check hours of operation). Lunch at the High Test Deli offers great sandwiches and an excellent ice cream sandwich. CJs Bar and Grill, Anthony’s, Bryson City Brewery, and Native Brews, all located in Bryson City, are great alternatives. If you want to venture out to nearby Franklin, the Slanted Window is a nice outdoor experience. Be sure to visit downtown Bryson City for your shopping pleasure with quaint shops and a friendly St. Joseph Thrift Store…(Deb volunteers there 😉)",
+      "text": "Quick items can be found at the nearby Dollar General. Ingles in Bryson City is a full-service grocery store that includes a deli. Swain is a dry county, so liquor can only be purchased at the ABC store in Bryson City. Beer and wine are sold at Ingles. Gas stations also sell beer. Breakfast at the Everett Street Diner in Bryson City serves a traditional diner breakfast (make sure to check days of operation). The Bryson City Bakery & Coffee Shop serves excellent pastries and coffee. The River’s End at the NOC also serves breakfast, lunch, and dinner, and offers a nice view over the river (make sure to check hours of operation). Lunch at the High Test Deli offers great sandwiches and an excellent ice cream sandwich. CJs Bar and Grill, Anthony’s, Bryson City Brewery, and Native Brews, all located in Bryson City, are great alternatives. If you want to venture out to nearby Franklin, the Slanted Window is a nice outdoor experience.",
       "links": {
+        "Everett Street Diner": "https://brysoncityrestaurant.com/",
         "The Bryson City Bakery & Coffee Shop": "https://www.brysoncitybakery.com/",
+        "The River's End": "https://noc.com/restaurants/rivers-end-restaurant/",
+        "High Test Deli": "https://www.thefillingstationdeli.com/",
         "CJs Bar and Grill": "https://www.explorebrysoncity.com/listing/cjs-grille/245/",
         "Anthony’s": "https://www.anthonysderailedbrysoncity.com/",
         "Bryson City Brewery": "https://www.brysoncitybrewing.com/",

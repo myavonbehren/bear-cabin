@@ -25,7 +25,7 @@ const ThingsToDo: NextPage = () => {
                   let processedText = text;
                   Object.entries(links).forEach(([name, url]) => {
                     const regex = new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'g');
-                    processedText = processedText.replace(regex, `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">${name}</a>`);
+                    processedText = processedText.replace(regex, `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-[#001d3d] hover:text-blue-800 underline">${name}</a>`);
                   });
                   return processedText;
                 };
@@ -57,7 +57,7 @@ const ThingsToDo: NextPage = () => {
                   let processedText = text;
                   Object.entries(links).forEach(([name, url]) => {
                     const regex = new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'g');
-                    processedText = processedText.replace(regex, `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">${name}</a>`);
+                    processedText = processedText.replace(regex, `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-[#001d3d] hover:text-blue-800 underline">${name}</a>`);
                   });
                   return processedText;
                 };
