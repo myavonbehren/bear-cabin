@@ -31,7 +31,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
         <title>Photos - Bear Cabin</title>
         <meta name="description" content="View photos of Bear Cabin" />
       </Head>
-      <main className="mx-auto max-w-[1960px] p-4 md:p-10">
+      <main className="mx-auto max-w-[1960px] px-4 py-4 md:p-10">
         {photoId && (
           <Modal
             images={images}
@@ -46,7 +46,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           <h1 className="text-4xl font-thin text-gray-900 mb-4">Photos</h1>
         </div>
         
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-2 pb-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-2 pb-5">
           {images.map(({ id, public_id, format, blurDataUrl }) => (
             <Link
               key={id}
@@ -58,7 +58,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
             >
               <Image
                 alt="Bear Cabin photo"
-                className="transform transition will-change-auto group-hover:brightness-90"
+                className="transform transition will-change-auto group-hover:brightness-90 w-full h-auto"
                 style={{ transform: "translate3d(0, 0, 0)" }}
                 placeholder="blur"
                 blurDataURL={blurDataUrl}
@@ -66,7 +66,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
                 width={720}
                 height={480}
                 sizes="(max-width: 640px) 100vw,
-                  (max-width: 1280px) 50vw,
+                  (max-width: 1024px) 50vw,
                   (max-width: 1536px) 33vw,
                   25vw"
               />
